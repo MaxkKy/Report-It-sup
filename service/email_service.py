@@ -1,6 +1,7 @@
 # แก้ไขไฟล์ email_service.py
 import smtplib
 from email.mime.text import MIMEText
+import streamlit as st # เพิ่มบรรทัดนี้
 
 def send_email_alert(sender_email, app_password, cat, detail, room):
     # 1. ระบุอีเมลบัญชีกลางที่คุณต้องการใช้ส่ง
